@@ -1,9 +1,17 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './navbar.scss';
 import {MdOutlineTravelExplore} from 'react-icons/md'
 import {AiFillCloseCircle} from 'react-icons/ai';
 import {TbGridDots} from 'react-icons/tb'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const NavBar = () => {
+    
+    //create a react hook to add a scroll animation
+    useEffect(() =>{
+        Aos.init({duration: 2000})
+    }, [])
 
     const [active, setActive] = useState('navBar')
     // Function to toggle navBar

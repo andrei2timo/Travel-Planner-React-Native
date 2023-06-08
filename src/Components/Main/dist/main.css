@@ -19,7 +19,6 @@
 }
 .main .secTitle .title {
   position: relative;
-  width: -moz-max-content;
   width: max-content;
   color: var(--textColor);
   margin: 1rem 0;
@@ -63,8 +62,7 @@
 .main .secContent .singleDestionation .imageDiv img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 2s ease;
 }
 .main .secContent .singleDestionation .imageDiv:hover img {
@@ -132,4 +130,4 @@
 .main .secContent .singleDestionation .cardInfo .btn .icon {
   align-self: center;
   font-size: 18px;
-}/*# sourceMappingURL=main.css.map */
+}

@@ -29,8 +29,7 @@
 }
 .footer .videoDiv video {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .footer .videoDiv::after {
   content: "";
@@ -44,7 +43,6 @@
 }
 .footer .secContent {
   width: 100%;
-  height: -moz-max-content;
   height: max-content;
   padding: 2rem initial;
   display: flex;
@@ -82,10 +80,6 @@
   outline: none;
   background: transparent;
   color: var(--whiteColor);
-}
-.footer .secContent .contactDiv .inputDiv input::-moz-placeholder {
-  color: var(--whiteColor);
-  opacity: 0.5;
 }
 .footer .secContent .contactDiv .inputDiv input::placeholder {
   color: var(--whiteColor);
@@ -134,8 +128,7 @@
   color: var(--textColor);
 }
 .footer .secContent .footerCard .footerSocials {
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+  column-gap: 0.5rem;
 }
 .footer .secContent .footerCard .footerSocials .icon {
   color: var(--blackColor);
@@ -185,4 +178,4 @@
 .footer .secContent .footerCard .footerDiv small {
   font-size: 10px;
   color: var(--whiteColor);
-}/*# sourceMappingURL=footer.css.map */
+}
