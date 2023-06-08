@@ -43,7 +43,7 @@
         gap: 1.5rem;
 
         .singleDestionation{
-            height: 100%;
+            height: auto;
             display: grid;
             row-gap: 10px;
             padding: 1rem;
@@ -151,6 +151,35 @@
                     }
                 }
             }
+        }
+    }
+}
+
+// MEDIA QUERIES =====================
+
+@media screen and (min-width: 500px) {
+    .title{
+        font-size: 1.5rem;
+        &::after{
+            width: 155px !important;
+        }
+    }
+
+    .secContent{
+        grid-template-columns: repeat(2,1fr);
+        
+        .singleDestionation{
+            height: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 840px){
+    .secContent{
+        grid-template-columns: repeat(3,1fr);
+        
+        .singleDestionation{
+            height: auto;
         }
     }
 }
